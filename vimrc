@@ -130,22 +130,22 @@ let mapleader="\<Space>"
 "   
 "   nnoremap <Leader>wcc :VimwikiAll2HTML<CR>:Vimwiki2HTMLBrowse<CR>
 "   " }}}
-"   
-"   " Easy Motion settings --------------------------{{{
-"   " Bi-directional find motion
-"   " Jump to anywhere you want with minimal keystrokes, with just one key binding.
-"   " `s{char}{label}`
-"   nmap s <Plug>(easymotion-s)
-"   " or
-"   " `s{char}{char}{label}`
-"   " Need one more keystroke, but on average, it may be more comfortable.
-"   " nmap s <Plug>(easymotion-s2)
-"   
-"   " Make it not case sensitive
-"   let g:EasyMotion_smartcase = 1
-"   let g:EasyMotion_do_mapping = 0 " Disable default mappings
-"   " }}}
-"   
+   
+" Easy Motion settings --------------------------{{{
+" Bi-directional find motion
+" Jump to anywhere you want with minimal keystrokes, with just one key binding.
+" `s{char}{label}`
+nmap s <Plug>(easymotion-s)
+" or
+" `s{char}{char}{label}`
+" Need one more keystroke, but on average, it may be more comfortable.
+" nmap s <Plug>(easymotion-s2)
+
+" Make it not case sensitive
+let g:EasyMotion_smartcase = 1
+let g:EasyMotion_do_mapping = 0 " Disable default mappings
+" }}}
+
 " General settings --------------------------{{{
 " Prevent do you want to reload file when editing in VS
 set autoread
