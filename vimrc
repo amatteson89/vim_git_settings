@@ -64,25 +64,25 @@ let mapleader="\<Space>"
     "   autocmd BufWritePre * silent :%s/\s\+$//e
 "   augroup END
 "   " }}}
-"   
-"   " CTRLP plugin settings --------------------------{{{
-"   "For G2xxx with all the submodules the 'r' option
-"   "locks your searches down in your local submodule
-"   "so just use 'a' so we can see all files from where
-"   "vim was started.
-"   let g:ctrlp_working_path_mode = 'a'
-"   "Open by filename, ignore path matching
-"   let g:ctrlp_by_filename = 1
-"   "ignore my binaries
-"   let g:ctrlp_custom_ignore = {
-    "   \ 'dir': '\v[\/]\.(git|hg|svn|sbas)$',
-    "   \ 'file': '\v\.(o32|o|via|exe|so|dll|bmp|obj|rsp|oxml|sbmp|lib|pyc)$',
-    "   \ }
-"   
-"   "Faster ctrl-p usage, it does lose some stuff in submodules though
-"   " let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard']
-"   " }}}
-"   
+
+" CTRLP plugin settings --------------------------{{{
+"For G2xxx with all the submodules the 'r' option
+"locks your searches down in your local submodule
+"so just use 'a' so we can see all files from where
+"vim was started.
+let g:ctrlp_working_path_mode = 'a'
+"Open by filename, ignore path matching
+let g:ctrlp_by_filename = 1
+"ignore my binaries
+let g:ctrlp_custom_ignore = {
+   \ 'dir': '\v[\/]\.(git|hg|svn|sbas)$',
+   \ 'file': '\v\.(o32|o|via|exe|so|dll|bmp|obj|rsp|oxml|sbmp|lib|pyc)$',
+   \ }
+
+"Faster ctrl-p usage, it does lose some stuff in submodules though
+" let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard']
+" }}}
+
 "   " Cscope settings --------------------------{{{
 "   " Found a trick for asynchronous running and updating, so what we do is call
 "   " cscope to update the file databases, then once it's done it calls back into
@@ -294,17 +294,17 @@ augroup make
 augroup END
 
 " }}}
-"   
-"   " NERDtree settings --------------------------{{{
-"   nnoremap <leader>nn :NERDTreeToggle<CR>
-"   nnoremap <leader>nf :NERDTreeFind<CR>
-"   
-"   "This one closes NERDTree on normal open commands but stays open for the g*
-"   "commands
-"   let g:NERDTreeQuitOnOpen=1
-"   
-"   " }}}
-"   
+
+" NERDtree settings --------------------------{{{
+nnoremap <leader>nn :NERDTreeToggle<CR>
+nnoremap <leader>nf :NERDTreeFind<CR>
+
+"This one closes NERDTree on normal open commands but stays open for the g*
+"commands
+let g:NERDTreeQuitOnOpen=1
+
+" }}}
+
 "   " Search options --------------------------{{{
 "   "these are for doing incremental and highlighting on searching
 "   set incsearch
